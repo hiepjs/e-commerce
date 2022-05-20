@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive e-commerce web design</title>
+
+    <!-- CUSTOM FONTAWESOME CDN FILE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CUSTOM SWIPER CSS FILE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION START -->
+
+    <header class="header">
+      <a href="home.html" class="header__logo"
+        ><i class="fa-solid fa-store"></i>shopie</a
+      >
+
+      <form action="" class="header__search">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fa-solid fa-search"></label>
+      </form>
+
+      <div class="header__icons">
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <div id="search-btn" class="fa-solid fa-search"></div>
+        <a href="login.html" class="fa-solid fa-user"></a>
+        <a href="#" class="fa-solid fa-heart"></a>
+        <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
+      </div>
+    </header>
+
+    <!-- HEADER SECTION END -->
+
+    <!-- SIDE-BAR SECTION START -->
+
+    <div class="side-bar">
+      <div id="side-bar-close" class="fa-solid fa-times"></div>
+
+      <div class="side-bar-user">
+        <img src="./public/images/user-img.png" alt="" />
+        <h3>shaikh anas</h3>
+        <a href="#">log out</a>
+      </div>
+
+      <nav>
+        <a href="home.html"
+          ><i class="fa-solid fa-angle-right"></i><span>home</span></a
+        >
+        <a href="about.html"
+          ><i class="fa-solid fa-angle-right"></i><span>about</span></a
+        >
+        <a href="products.html"
+          ><i class="fa-solid fa-angle-right"></i><span>products</span></a
+        >
+        <a href="contact.html"
+          ><i class="fa-solid fa-angle-right"></i><span>contact</span></a
+        >
+        <a href="login.html"
+          ><i class="fa-solid fa-angle-right"></i><span>login</span></a
+        >
+        <a href="register.html"
+          ><i class="fa-solid fa-angle-right"></i><span>register</span></a
+        >
+        <a href="cart.html"
+          ><i class="fa-solid fa-angle-right"></i><span>cart</span></a
+        >
+      </nav>
+    </div>
+
+    <!-- SIDE-BAR SECTION END -->
+
+    <!-- HOME SECTION START -->
+    <section class="home">
+      <div class="home__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./public/images/home-img-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>smartphones</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./public/images/home-img-2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>smartwatch</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./public/images/home-img-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>headphones</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- HOME SECTION END -->
+
+    <!-- BANNER SECTION START -->
+
+    <section class="banner">
+      <h1 class="heading">banner <span>product</span></h1>
+
+      <div class="banner__container">
+        <a href="#" class="box">
+          <img src="./public/images/banner-1.jpg" alt="" />
+          <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+          </div>
+        </a>
+        <a href="#" class="box">
+          <img src="./public/images/banner-2.jpg" alt="" />
+          <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+          </div>
+        </a>
+        <a href="#" class="box">
+          <img src="./public/images/banner-3.jpg" alt="" />
+          <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- BANNER SECTION END -->
+
+    <!-- ARRIVALS SECTION START -->
+
+    <section class="arrivals">
+      <h1 class="heading">new <span>arrivals</span></h1>
+
+      <div class="arrivals__container">
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-1.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-1-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-6.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-6-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-2.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-2-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-3.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-3-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-4.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-4-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="images">
+            <img
+              src="./public/images/arrival-5.jpg"
+              class="image-main"
+              alt=""
+            />
+            <img
+              src="./public/images/arrival-5-hover.jpg"
+              class="image-hover"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>HD Television</h3>
+            <div class="price">$249.99 <span>$399.99</span></div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARRIVALS SECTION END -->
+
+    <!--  SECTION FOOTER START -->
+
+    <section class="quick-links">
+      <a href="home.html" class="header__logo"
+        ><i class="fa-solid fa-store"></i>shopie</a
+      >
+
+      <div class="links">
+        <a href="home.html"
+          ></i><span>home</span></a
+        >
+        <a href="about.html"
+          ></i><span>about</span></a
+        >
+        <a href="products.html"
+          ></i><span>products</span></a
+        >
+        <a href="contact.html"
+          ></i><span>contact</span></a
+        >
+        <a href="login.html"
+          ></i><span>login</span></a
+        >
+        <a href="register.html"
+          ></i><span>register</span></a
+        >
+        <a href="cart.html"
+          ></i><span>cart</span></a
+        >
+      </div>
+
+      <div class="share">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </section>
+
+    <section class="credit">
+
+      <p>created by <span>ziczac web design</span> all rights reserved</p>
+
+      <div class="card">
+
+        <img src="./public/images/card_img.png" alt="">
+
+      </div>
+
+    </section>
+
+    <!--  SECTION FOOTER END --> 
+
+    <!-- CUSTOM SWIPER JS FILE LINK -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- CUSTOM JS FILE LINK -->
+    <script src="./resources/js/script.js"></script>
+  </body>
+</html>
